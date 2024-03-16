@@ -1,28 +1,23 @@
 #!/usr/bin/python3
-""" 
-Bash script to determine if a box will open with a list
-of keys stored in boxes that contain list of lists 
 """
-
-
+Python module for determing sequential algorithm using
+boxes and keys.
+"""
 def canUnlockAll(boxes):
+    """Function checks whether all boxes can be opened 
+    or not
     """
-    Funct to check if the boxes can unlock
-    Args:
-    boxes: list of lists
-    Return: True or False
-    """
-    beginner = 0
-    unlock = {}
+    n = len(boxes)
+    opened_boxes = [False] * n
+    opened_boxes[0] = True
+    next_box = [0]
 
-    for eachbox in boxes:
-        if len(eachbox) == 0 or beginner == 0:
-            unlock[beginner] = "unlocked"
-        for key in eachbox:
-            if key < len(boxes) and key != beginner:
-                unlock[key] = key
-        if len(unlock) == len(boxes):
-            return True
-        beginner += 1
-    return False
+    while next_box:
+        current_box = next_box.pop()
 
+        for item in boxes[current_box]:
+            if not opened_boxes[item]:
+                opened_boxes[item] = True
+                next_box.append(item)
+
+    return all(opened_boxes)

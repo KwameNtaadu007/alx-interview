@@ -1,34 +1,31 @@
-0x01. Lockboxes
-Algorithm
-Python
+# 0x01-lockboxes
 
-Must Know
-For this project, you will need a solid understanding of several key concepts in order to develop a solution that can efficiently determine if all boxes can be opened. Here’s a list of concepts and resources that will be instrumental in tackling this project:
+**Overview:**
+This project aims to develop an efficient algorithm to determine if all boxes in a given set can be opened, considering the availability of keys inside the boxes. The solution will involve leveraging concepts from graph theory, algorithmic complexity, recursion, and data structures like lists, queues, stacks, and sets. Python will be the primary programming language used for implementation.
 
-Concepts Needed:
-Lists and List Manipulation:
+**Key Concepts:**
 
-Understanding how to work with lists, including accessing elements, iterating over lists, and modifying lists dynamically.
-Python Lists (Python Official Documentation)
-Graph Theory Basics:
+1. **Lists and List Manipulation:**
+   - Understanding the manipulation of lists, including accessing elements, iterating over lists, and modifying lists dynamically.
+   - Resources: [Python Lists](https://docs.python.org/3/tutorial/datastructures.html)
 
-Although not explicitly required, knowledge of graph theory (especially concepts related to traversal algorithms like Depth-First Search or Breadth-First Search) can be very helpful in solving this problem, as the boxes and keys can be thought of as nodes and edges in a graph.
-Graph Theory (Khan Academy)
-Algorithmic Complexity:
+2. **Graph Theory Basics:**
+   - Knowledge of graph theory, particularly traversal algorithms such as Depth-First Search (DFS) or Breadth-First Search (BFS), will aid in solving the problem.
+   - Resources: [Graph Theory - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
 
-Understanding the time and space complexity of your solution is important, as it can help in writing more efficient algorithms.
-Big O Notation (GeeksforGeeks)
-Recursion:
+3. **Algorithmic Complexity:**
+   - Understanding the time and space complexity of the solution is essential for writing efficient algorithms.
+   - Resources: [Big O Notation](https://www.geeksforgeeks.org/big-o-notation/)
 
-Some solutions might require a recursive approach to traverse through the boxes and keys.
-Recursion in Python (Real Python)
-Queue and Stack:
+4. **Recursion:**
+   - Some solutions may require a recursive approach for traversing through the boxes and keys.
+   - Resources: [Recursion in Python](https://realpython.com/python-recursion/)
 
-Knowing how to use queues and stacks is crucial if implementing a breadth-first search (BFS) or depth-first search (DFS) algorithm to traverse through the keys and boxes.
-Python Queue and Stack (GeeksforGeeks)
-Set Operations:
+5. **Queue and Stack:**
+   - Knowledge of using queues and stacks is crucial for implementing BFS or DFS algorithms to traverse through the keys and boxes.
+   - Resources: [Python Queue and Stack](https://www.geeksforgeeks.org/stack-queue-python-using-module-queue/)
 
-Understanding how to use sets for keeping track of visited boxes and available keys can optimize the search process.
-Python Sets (Python Official Documentation)
-By reviewing these concepts and utilizing these resources, you will be well-equipped to develop an efficient solution for this project, applying both your algorithmic thinking and Python programming skills.
+6. **Set Operations:**
+   - Understanding how to use sets for keeping track of visited boxes and available keys can optimize the search process.
+   - Resources: [Python Sets](https://docs.python.org/3/tutorial/datastructures.html#sets)
 
