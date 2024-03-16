@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-""" Bash script to determine if a box will open with a list
-of keys stored in boxes that contain list of lists """
+""" 
+Bash script to determine if a box will open with a list
+of keys stored in boxes that contain list of lists 
+"""
 
 
 def canUnlockAll(boxes):
